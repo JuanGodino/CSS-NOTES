@@ -1,0 +1,106 @@
+/*CSS= CASCADING STYLE SHEETS*/
+/*BOOTSWATCH.COM PARA EJEMPLOS*/
+/*SE PUEDE SELECCIONAR UNA ETIQUETA, UNA CLASE, UN ID Y MUCHAS FORMAS MAS. SIEMPRE TERMINA CON ; lo ultimo sera lo que toma*/
+
+body {
+	background-color: #D8D8D8;
+    
+    /*
+        el backgrund puede ser un color o una imagen, incluso podria ir cambiando en relacion a las secciones o divs
+
+        background-image: url('https:\\algo.com\algo.jpg')
+        background-repeat: no-repeat u otros(si la imagen se repite o no, o solo en X o Y)
+        background-position: top left, top right (es de donde empieza el fondo arriba, abajo, al medio etc) 
+        background-attachment: fixed / scroll (se mueve cuando bajo o no)
+        background-size: cover ( el fondo se estira, se acomoda o cubre, o le asigno un tamaño exacto)
+
+        y tambien se puede poner todo en una propiedad
+
+        background: green url('https:\\algo.com\algo.jpg') no-repeat left top fixed
+    */
+    
+
+}
+
+
+/*Seleccion por Id Ojo con mayusculas y minusculas!!*/
+
+#Titulo {
+    color: aqua;
+}
+
+
+/*Seleccion por clase y seleccion de etiqueta que solo tengan esa clase, osea solo los parrafos que tengan la clase de parrado*/
+
+.parrafo {
+    color: blue;
+}
+
+p.parrafo {
+    color: blue;
+}
+
+/*Seleccion de multiples etiquetas por herencia, en este caso seria solo las A que esten dentro del footer y tambien los h3*/
+
+footer a, footer h3 {
+    color: blueviolet;
+    font-style: normal;
+    text-decoration: solid;
+}
+
+/*la seleccion por * aplica a todo, pero definira todo aquello que no haya sido definido antes, es decir que si algo ya se definio no lo reemplaza*/
+
+* {
+    color: black; /*el color puede ser por texto (blue, red, etc), hexagesimal (#f00) , hsl o rgb*/
+    /* COLOR
+    hexagesimal = #f00 
+    hsl(hue, saturation, lightness) - hsla(hue, saturation, lightness, alpha)
+    rgb(red, green, blue) - rgba(red, green, blue, alpha) 
+    linear-gradient(to ....., color1, color2, etc)
+    PUEDE COMPLEMENTARSE CON LA PROPIEDAD opacity en donde 0 es nada y 1 100%
+
+    */
+}
+
+.section {
+
+    background-color: aquamarine;
+    border: 5px red solid;
+    /*
+        se pueden definir aspectos por separado o en conjunto con la prop de border
+        border-style, border-width, border-color, border-radius
+
+        a su vez el estilo puede ser solid, dotted, dashed, double, groove, ridge, insert, outset, none, hidden.
+
+        tambien puedo definir cual quiero que sea, es decir border-top, bottom, left y right.
+
+        un borde por fuera del borde podemos definir otro 
+    */
+
+    margin: 10px;
+    padding: 5px;
+
+    /*
+        margin es la separacion entre la caja y el sitio web
+        padding es la separacion entre el borde de la caja y el contenido propio
+
+        puede ponerse un solo valor que aplicara a sus 4 lados, 2valores, 3 o 4 valores
+    */
+
+    height: 100px;
+    width: 50px;
+    overflow: scroll;
+    
+
+    /*
+        Height y with permite dar tamaño a un elemento o caja
+        y overflow es todo lo que sobresale de esta, se puede ocultar (hidden), dejar que desborde o scrolear. Podemos definir tanto en x como en y (overflow-x o -y)
+
+        ademas se puede definir su posicion con
+            position: que puede ser fija, absoluta, por defecto etc o o definiendo en cada lado su posicion o medidas por ejemplo
+                left: 15px
+                top: 0px
+            y como una variacion podemos definir el ancho maximo con max-width
+    */
+
+}
