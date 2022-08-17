@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+    <link rel="stylesheet" href="main.css"/>
+    <!--se pone esa etiqueta de link para conectar con el archivo de estilos-->
+</head>
+<body>
+	<!--en VS code guardando el archivo como .html y poniendo solo ! genera el codigo necesario para arrancar
+	la manera en que ordena la estructura de la pag web es en Head y body-->
+
+	<!--Luego podemos en body dividirlo en header, section y footer-->
+	
+	<header>
+		<!--En el header iria titulo, logo, menu etc-->
+		<h1 id="#Inicio">Titulo del sitio</h1>
+	</header>
+
+	<section>
+		<!--En el section iria la informacion o el contenido en lugar de section podria ir div tambien-->
+		<article class="Post">
+			<h2 id="Titulo">Titulo del articulo</h2>
+			<p class="parrafo">Parrafo</p>
+            <p class="parrafo">Parrafo</p>
+			<!--Es importante manejar las cosas en bloques o cajas, ser ordenado en el codigo por eso se utiliza article-->
+			<!--A su vez la propiedad Class sirve para asignar una clase a un elemento mientras id su objetivo es que sea unico-->
+		</article>
+	</section>
+
+    <section class="section">
+		<article class="Post">
+			<h2 id="Titulo">Titulo del articulo</h2>
+			<p class="parrafo">Parrafo</p>
+            <p class="parrafo">Parrafo</p>
+		</article>
+	</section>
+
+
+	<footer>
+		<!--En el footer, pie de pagina, iria nombre, copyright, etc-->
+		<a href="#Inicio">Ir al comienzo</a> <!--Sirve para enviar a alguna parte del sitio sin recargar utilizando el id-->
+        <h3>Titulo3</h3>
+	</footer>
+
+</body>
+</html>
