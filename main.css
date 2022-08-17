@@ -36,9 +36,10 @@ body {
     color: blue;
 }
 
-p.parrafo {
+/*p.parrafo {
     color: blue;
-}
+} 
+*/
 
 /*Seleccion de multiples etiquetas por herencia, en este caso seria solo las A que esten dentro del footer y tambien los h3*/
 
@@ -74,7 +75,7 @@ footer a, footer h3 {
 
         tambien puedo definir cual quiero que sea, es decir border-top, bottom, left y right.
 
-        un borde por fuera del borde podemos definir otro 
+        un borde por fuera del borde lo podemos definir con un outline
     */
 
     margin: 10px;
@@ -85,6 +86,8 @@ footer a, footer h3 {
         padding es la separacion entre el borde de la caja y el contenido propio
 
         puede ponerse un solo valor que aplicara a sus 4 lados, 2valores, 3 o 4 valores
+
+        para que aparezcan centrada la informacion el margin debe ser 0 en un lado y auto en el otro para que reparta el margen en ambos lados
     */
 
     height: 100px;
@@ -102,5 +105,71 @@ footer a, footer h3 {
                 top: 0px
             y como una variacion podemos definir el ancho maximo con max-width
     */
+
+}
+
+section p.parrafo {
+    text-align: center; /*Alineacion de texto en relacion a su caja*/
+    text-decoration: underline; /*decoracion de texto*/
+    text-shadow: 3px 2px 5px blue ;/*Es sombra paralela, existe una similar llamada box-shadow*/
+    font-family: 'roboto', Geneva, Tahoma, sans-serif;
+
+}
+
+a:link{ /*Antes de ser visitado*/
+    color: brown;
+
+}
+
+a:visited{
+    color: gray;
+}
+
+a:hover{ /*Cuando paso el cursor*/
+    color: aqua;
+}
+
+a:active{ /*Mientras lo presiono*/
+    color: black;
+}
+
+ul{
+    list-style-type: none; /*Sirve para cambiar el icono que conforma la lista o quitarlo*/
+    padding-left: 0px; /*Por defecto viene con un pading*/
+    list-style-position: inside; /*eso hara que el punto quede por dentro del texto*/
+}
+
+table{
+    width: 100%; /*Se puede dar anchos en porcentajes para ocupar lo que sea necesario*/
+    border-collapse: collapse; /*Quita la separacion entre celdas*/
+
+}
+
+th, td{ /*manera de seleccionar varias etiquetas al mismo tiempo*/
+    border: solid 1px black;
+
+}
+
+th{
+    background-color: blueviolet;
+    color: aliceblue;
+}
+
+tr:nth-child(even){ /*Asi podemos seleccionar algunas cosas dentro de una misma seleccion, aca por ej son solo los pares*/
+    background-color: gray;
+}
+tr:hover{ 
+    background-color: goldenrod;
+    cursor: pointer;
+
+    /*En caso de querer crear una animacion se utiliza transition en donde se indica que se debe animar, que tiempo toma y como se anima= transition: all 0.3s ease*/
+}
+
+.Inline{ 
+    display: inline;/*Hay algunos elementos que son inline o inblock que puede ser cambiado con esta propiedad, inline block puede ser definido por ancho y alto pero el resto no*/
+    /* visibility: hidden;ocultar elementos, tambien podria ser en display none */
+    max-width: 300px; /*Define el maximo ancho que puede tomar un elemento, pero podria ser menos*/
+    position: absolute; /*Puede ser estatico, absoluto, relativo, fijo o sticky y refieren a distintos usos. poniendose encima de otros objetos*/
+    /*float: right; sirve para hacer flotar a un elemento a algun lado haciendo que el resto de cosas se acomoden alrrededor(ceñir texto), se mejora indicando medidas de ancho y alto*/
 
 }
