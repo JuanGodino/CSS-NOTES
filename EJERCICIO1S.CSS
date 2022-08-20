@@ -1,0 +1,63 @@
+body{
+    background-color: rgb(214, 214, 216);
+}
+.ROJO{
+    width: 200PX;
+    height: 50PX;
+    max-height: 50PX;
+    background-color: white;
+    text-align: center;
+    padding: 10PX 15px;
+    border-left: 3PX rgb(177, 16, 16) SOLID;
+    box-shadow: 1PX 2PX 2PX gray;
+    font-family: 'ROBOTO' , Geneva, Tahoma, sans-serif;
+    transition: all 0.3s;
+    margin: 5PX;
+
+}
+
+.ROJO:hover{
+    transform: scale(1.05, 1.05);
+}
+
+.VERDE{
+    width: 200PX;
+    height: 50PX;
+    max-height: 50PX;
+    background-color: white;
+    text-align: center;
+    padding-left: 0;
+    padding-top: 0;
+    padding: AUTO 0;
+    border-left: 3PX rgb(10, 105, 18) SOLID;
+    box-shadow: 1PX 2PX 2PX gray;
+    font-family: 'ROBOTO' , Geneva, Tahoma, sans-serif;
+    transition: all 0.3s;
+    margin: 5PX;
+
+}
+
+.VERDE:hover{
+    box-shadow: 2PX 3PX 3PX gray;
+}
+
+.AZUL{
+    width: 200PX;
+    height: 50PX;
+    max-height: 50PX;
+    background-color: white;
+    text-align: center;
+    padding-left: 0;
+    padding-top: 0;
+    padding: AUTO 0;
+    border-left: 3PX rgb(5, 8, 165) SOLID;
+    box-shadow: 1PX 2PX 2PX gray;
+    font-family: 'ROBOTO' , Geneva, Tahoma, sans-serif;
+    transition: all 0.3s;
+    margin: 5PX;
+
+}
+
+.AZUL:hover{
+    background-color: rgb(137, 137, 218);
+}
