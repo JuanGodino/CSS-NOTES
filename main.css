@@ -162,7 +162,7 @@ tr:hover{
     background-color: goldenrod;
     cursor: pointer;
 
-    /*En caso de querer crear una animacion se utiliza transition en donde se indica que se debe animar, que tiempo toma y como se anima= transition: all 0.3s ease*/
+    
 }
 
 .Inline{ 
@@ -172,4 +172,24 @@ tr:hover{
     position: absolute; /*Puede ser estatico, absoluto, relativo, fijo o sticky y refieren a distintos usos. poniendose encima de otros objetos*/
     /*float: right; sirve para hacer flotar a un elemento a algun lado haciendo que el resto de cosas se acomoden alrrededor(ceñir texto), se mejora indicando medidas de ancho y alto*/
 
+}
+
+.box{
+    position: relative;
+    left: 50px;
+    top: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in; /*En caso de querer crear una animacion se utiliza transition en donde se indica que se debe animar, que tiempo toma y como se anima= transition: all 0.3s ease*/
+    transition-delay: 0.1s;
+}
+
+.box:hover{
+    transform: scale(1.05, 1.05); /*hace distintas transformaciones, rotar, mover, escalar, etc, puedo indicar que eje utilizar*/
+    /*transform: rotate(20deg) 
+                 scale(1, 2)
+                 skew(5deg, 10deg)*/
+    width: 150px;
 }
