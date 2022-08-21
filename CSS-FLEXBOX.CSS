@@ -1,0 +1,44 @@
+body{
+    background-color: rgb(214, 214, 214);
+    width: 100%;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;/*puede ser en fila, columna, fila inv etc*/
+    flex-wrap: wrap;/*acomoda el contenido en el espacio definido, puede ser wrap o flex-wrap(inverso)*/
+    /*se pueden poner juntos en flex-flow: row wrap; 
+    en donde aclaro primero como se organiza y desp como se contiene*/
+    justify-content: flex-start;/*igual que en el grid, alinea el contenido en el contenedor
+    flex-start, -end o centre, space betweem, around y evenly*/
+
+    /* align-items: stretch; tambien como grid acomoda los elementos dentro de este */
+    
+    height: 200PX;
+
+    /* align-content: space-around;acomoda todo el contenido en el contenedor */
+    
+    
+
+}
+
+.PRIMERO{
+    order: -1;
+    /*de base es 0 pero mientras mas grande sea menos importancia tiene
+    se ordena de mayor a menor*/
+
+    flex-grow: 2;/*permite hacer crecer los elementos dividiendo el espacio disponible
+    haciendo que el valor que le de sea la cant de veces de la fraccion que tome*/
+
+    flex-basis: 120PX; /*es el valor que tomara de ancho base aparte de el flex-grow*/
+
+    /*si escribimos eso junto en la propiedad de flex: 1 120px - 1ero el grow y 2do el basis*/
+
+}
+
+.SEGUNDO{
+    flex-grow: 3;
+    align-self: center; /*alinea el contenido dento de su propia celda o el contenedor*/
+}
+
+/* para practicar flexbox ver flexbobfroggy.com */
