@@ -1,0 +1,38 @@
+body{
+    background-color: gray;
+}
+
+
+.grid{
+    display: grid; /*Puede ser grid o inline grid,
+     siendo el segundo caso una grilla con el tamaño justo*/
+
+    /*grid-template-rows: 50px ; /*Define el ancho de las filas,
+     sino se definen todas tomara el tamaño del valor*/
+
+     grid-template-columns: 50px 100px;/*Define el ancho de
+     las columnas, segun la cant que defina existiran*/ 
+    /*repeat(3, 50px) - sirve para repetir ciertos valores el primero indica la cant y el segundo la medida*/
+     grid-template-rows: minmax(20px, auto);/*Define una medida min y
+     max en ese ordem, se puede colocar auto para que no tenga limites*/
+    
+     grid-gap: 20px 10px; /*el primero es las filas y el otro para columnas*/
+
+    
+}
+
+.element{
+    background-color: royalblue;
+}
+
+.element-header{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: blue;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    /*sirve para combinar varias celdas, se pueden indicar juntas asi
+    grid-column: 1 / 6 siendo el primero el inicio y el segundo el final
+    asi igual con filas (grid-row)*/
+}
