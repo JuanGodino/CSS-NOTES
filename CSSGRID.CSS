@@ -7,22 +7,43 @@ body{
     display: grid; /*Puede ser grid o inline grid,
      siendo el segundo caso una grilla con el tamaño justo*/
 
-    /*grid-template-rows: 50px ; /*Define el ancho de las filas,
-     sino se definen todas tomara el tamaño del valor*/
+        /*grid-template-rows: 50px ; /*Define el ancho de las filas,
+        sino se definen todas tomara el tamaño del valor*/
 
      grid-template-columns: 50px 100px;/*Define el ancho de
      las columnas, segun la cant que defina existiran*/ 
-    /*repeat(3, 50px) - sirve para repetir ciertos valores el primero indica la cant y el segundo la medida*/
+        /*repeat(3, 50px) - sirve para repetir ciertos valores el primero indica la cant y el segundo la medida*/
      grid-template-rows: minmax(20px, auto);/*Define una medida min y
      max en ese ordem, se puede colocar auto para que no tenga limites*/
     
+        /*Si quisieramos nombrar las lineas seria asi
+        grid-templates-rows(o columns): [row-1-nombre]*/
+
+        /*una forma mas rapida de nombrar seria asi:
+        repeat(2, [row-inicio] 50px [row-fin]) esto lo que hace es que la primera linea
+        se llame inicio, seguido de fin y asi sucesivamente*/
+
      grid-gap: 20px 10px; /*el primero es las filas y el otro para columnas*/
 
+     grid-auto-rows: 140px; /*Esta funcion hace que todas las filas que se creen tendran ese tamaño*/
+
+     grid-auto-flow: row; /* transforma la conformacion de la tabla, por ejemplo
+     si se agrega mas datos se hagan nuevas filas o columnas nuevas*/
     
+    justify-items: stretch; /*acomoda el contenido verticalmente a un lado o centrado*/
+    /*puede ser start(derecha), end(izq), stretch(estirar todo el ancho)*/
+    /*tambien se puede usar space-around para generar un espaciado que se distribuye en el contenido (deja 1 espacio arriba y abaho y 2 entre medio),
+    space-between y space-evenly deja espacio entre los elementos pero no al inicio y al final*/
+
+    align-items: stretch; /*Acomoda en realcion a las filas*/
+
+    /*PARA PRACTICAR VER CSSGRIDGARDEN*/
 }
 
 .element{
     background-color: royalblue;
+    justify-self: stretch; /*para alinear un solo elemento*/
+    align-self: center;
 }
 
 .element-header{
